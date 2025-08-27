@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="task4.css">
+    <link rel="shortcut icon" href="./logo.jfif" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: lightgray;
+        }
+
+        /* HEADER */
+
+        .header {
+            height: 60px;
+            width: 100%;
+            background-color: rgb(155, 155, 155);
+            border: 1px solid black;
+        }
+
+        .logo {
+            height: 60px;
+            width: 30%;
+            background-color: rgb(110, 110, 110);
+
+            pre {
+                font-size: 30px;
+                font-weight: bold;
+                display: inline;
+                color: white;
+                font-family: cursive;
+                position: relative;
+                bottom: 7px;
+                left: 20px;
+            }
+        }
+
+        .nav {
+            li {
+                display: inline;
+                position: relative;
+                bottom: 50px;
+                right: 40px;
+                float: right;
+                /* background-color: rgb(194, 194, 194); */
+            }
+
+            li a {
+                font-size: 25px;
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                margin: 10px;
+            }
+        }
+
+        /* HOME */
+
+        .home {
+            margin: 5% 10%;
+            height: 370px;
+            background-color: rgb(182, 182, 182);
+            border: 1px solid black;
+
+            .img {
+                padding: 20px;
+            }
+
+            .matter {
+                font-size: 60px;
+                position: relative;
+                bottom: 350px;
+                right: 200px;
+                display: inline;
+                float: right;
+                line-height: 40px;
+            }
+
+        }
+
+        /* ABOUT */
+
+        #about {
+            margin: 5% 5%;
+            width: fit-content;
+            background-color: rgb(182, 182, 182);
+            border: 1px solid black;
+
+            h1 {
+                font-size: 25px;
+                padding: 5px;
+            }
+
+            pre {
+                font-size: 16px;
+                padding: 5px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+
+        /* PROJECTS */
+
+        #projects {
+            margin: 0px 5%;
+            height: 400px;
+            background-color: rgb(182, 182, 182);
+            border: 1px solid black;
+
+            h1 {
+                font-size: 25px;
+                padding: 5px;
+            }
+
+            img {
+                padding: 10px;
+                opacity: 0.5;
+                border-radius: 10%;
+            }
+        }
+
+        /* CONTACTS */
+
+        #contact {
+            padding: 100px 100px;
+        }
+
+        .contact-card {
+            padding: 50px 80px;
+            border-radius: 25px;
+            box-shadow: 0 5px 7px rgb(65, 65, 65);
+            max-width: 1000px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            border: 1px solid #333;
+
+            h1 {
+                font-size: 60px;
+                color: #333;
+            }
+
+            p {
+                margin: 20px 0;
+                font-size: 36px;
+                color: #333;
+            }
+
+            a {
+                color: #555;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+
+        #hire-me {
+            background: gray;
+            color: white;
+            padding: 120px 40px;
+            text-align: center;
+
+            h2 {
+                font-size: 55px;
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-size: 36px;
+                margin-bottom: 40px;
+            }
+
+        }
+
+        /* BUTTON */
+
+        .button {
+            text-decoration: none;
+            display: inline-block;
+            padding: 25px 50px;
+            background: white;
+            color: rgb(75, 75, 75);
+            border-radius: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* FORM */
+
+        #contact-form {
+            padding: 100px 40px;
+            background: #f5f5f5;
+            font-family: Arial, sans-serif;
+
+            h2 {
+                font-size: 30px;
+                text-align: center;
+                margin-bottom: 40px;
+                color: #333;
+            }
+        }
+
+        .form {
+            max-width: 800px;
+            margin: auto;
+            background: rgb(236, 236, 236);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+            label {
+                display: block;
+                margin-bottom: 10px;
+                font-weight: bold;
+                color: #444;
+
+            }
+
+            .input,
+            .textarea {
+                width: 100%;
+                padding: 20px;
+                margin-top: 30px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                line-height: 10px;
+            }
+        }
+
+        .form button {
+            width: 100%;
+            padding: 25px;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        /* FOOTER */
+
+        .footer {
+            height: 60px;
+            width: 100%;
+
+            p {
+                color: rgb(51, 51, 51);
+                text-align: center;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER  -->
+
+    <div class="header">
+        <div class="logo"><img src="./logo.jfif" alt="logo" height="60px" width="60px">
+            <pre style="text-align: center;">   Kriti Shukla   </pre>
+        </div>
+
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#" target="_blank">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- HOME  -->
+    <div class="home">
+
+        <div class="img"><img src="./kriti.jpg" alt="Photograph" height="330px" width="300px"></div>
+
+        <div class="matter">
+            <pre><span style="font-size: 40px; font-family: cursive; color: rgb(0, 0, 0);">Hello...        <br>         I am </span> 
+      <span style="font-size: 40px;font-family: cursive;font-weight: bold; color: rgb(0, 0, 0);">Kriti</span></pre>
+        </div>
+
+        <pre
+            style="font-size: 20px; float: right; position: relative; bottom:160px; left: 180px; background-color: rgb(165, 165, 165);"><em> A Web Developer passionate about creating <br>  <strong>clean, modern, and responsive websites.</strong> </em></pre>
+        <p
+            style="font-size: 18px; float: right; position: relative; bottom:90px; left: 540px;background-color: rgb(165, 165, 165);">
+            <em>"Check out my projects below"</em>
+        </p>
+
+    </div>
+
+    <!-- ABOUT  -->
+
+    <div id="about">
+        <h1>ABOUT-</h1>
+        <pre><strong>Hey, I’m Kriti Shukla...</strong> 
+<em>I’m a passionate Web Developer and a current B.Sc. student at S.K. College, Sikar. 
+I’m building a strong foundation in web technologies, with skills in HTML and CSS, and actively working on expanding my knowledge to grow as a developer. 
+I enjoy creating clean, responsive, and user-friendly websites that combine both functionality and design.My focus right now is on sharpening my technical skills, exploring
+modern tools, and working on projects that challenge me to think creatively and solve problems. 
+Beyond coding, I have a deep interest in traveling, singing, and sketching, which fuel my creativity and give me fresh perspectives.
+I’m open to opportunities such as internships, collaborations, and projects where I can apply my skills, continue learning, and contribute to meaningful work.</em></pre>
+    </div>
+
+    <br>
+
+    <!-- PROJECTS -->
+
+    <div id="projects">
+        <h1> PROJECTS- </h1>
+        <img src="./flower cart.png" alt="flower" height="300px" width="250px">
+        <a href="https://github.com/kritishukla1121/Flower.git" style="color: black;">Flowers website</a>
+        <img src="./medical shop cart.png" alt="medical shop" height="300px" width="250px">
+        <a href="https://github.com/kritishukla1121/medical-shop.git" style="color: black;">Medical shop</a>
+        <img src="./sample website cart.png" alt="sample website" height="300px" width="250px">
+        <a href="https://github.com/kritishukla1121/sample-website.git" style="color: black;">Sample website</a>
+    </div>
+
+    <!-- CONTACTS -->
+
+    <section id="contact">
+        <div class="contact-card">
+
+            <h1>Contact</h1>
+
+            <p><i class="fas fa-envelope"></i>
+                <a href="mailto:shuklakriti1121@gmail.com">shuklakriti1121@gmail.com</a>
+            </p>
+
+            <p><i class="fab fa-instagram"></i>
+                <a href="https://instagram.com/curlique_162625" target="_blank">@curlique_162625</a>
+            </p>
+
+            <p><i class="fab fa-github"></i>
+                <a href="https://github.com/kritishukla1121" target="_blank">github.com/kritishukla1121</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- BUTTON -->
+
+    <section id="hire-me">
+        <div class="hire-box">
+            <h2>Want to work with me?</h2>
+            <p>If you’d like to collaborate or hire me for your projects, just click below </p>
+            <a href="#contact-form" class="button">CLICK</a>
+        </div>
+    </section>
+
+    <!-- FORM -->
+
+    <section id="contact-form">
+        <h2>Contact Me</h2>
+        <form class="form">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+            <br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+        <p>Based in Sikar, Rajasthan | Available for collaborations </p>
+        <p>© 2025 Kriti Shukla | All rights reserved.</p>
+    </div>
+
+</body>
+
+</html>
